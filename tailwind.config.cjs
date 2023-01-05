@@ -4,12 +4,16 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    colors: {
-      navbar: '#1f1f1f',
-      white: '#fff',
-      optionHover: 'rgba(255, 255, 255, 0.04)'
+    extend: {
+      colors: {
+        navbar: '#1f1f1f',
+        white: '#fff',
+        optionHover: 'rgba(255, 255, 255, 0.04)'
+      },
+      backgroundImage: {
+        'login-gamersclub': "url('./src/assets/login-gc-bg.jpg')"
+      }
     },
-    extend: {},
   },
   plugins: [],
 }
