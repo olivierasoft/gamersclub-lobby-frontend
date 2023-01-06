@@ -1,11 +1,11 @@
-import {Navbar} from "./components/Navbar";
-import {FormBody} from "./components/FormBody";
+import { FormBody } from "./components/FormBody";
+import { Navbar } from "./components/Navbar";
 
 export function Login() {
 	return (
-		<div className="flex flex-col h-screen bg-cover bg-center bg-login-gamersclub">
-			<Navbar/>
-			<FormBody/>
+		<div className="bg-login-gamersclub flex h-screen flex-col bg-cover bg-center">
+			<Navbar />
+			<FormBody />
 		</div>
 	);
 }

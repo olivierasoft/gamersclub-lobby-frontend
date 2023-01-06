@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import { CountryOption, CountryOptionProps } from "./CountryOption";
+import { AiFillCaretUp } from "react-icons/all";
+
 import portugueseIcon from "../../../assets/brazil.png";
 import englishIcon from "../../../assets/english.png";
 import espanolIcon from "../../../assets/espanol.png";
+import { CountryOption, CountryOptionProps } from "./CountryOption";
 import { CountryOptionDropdown } from "./CountryOptionDropdown";
-import { AiFillCaretUp } from "react-icons/all";
 
 const countryOptions: Omit<CountryOptionProps, "onOptionClickCb">[] = [
 	{
@@ -50,7 +51,9 @@ export function Nationality() {
 			<div
 				ref={buttonRef}
 				onClick={switchDropdownVisible}
-				className="flex sm:w-40 hover:bg-optionHover border mr-10 border-white border-opacity-50 rounded-sm text-white items-center justify-between cursor-pointer"
+				className="flex sm:w-40 hover:bg-optionHover 
+				border mr-10 border-white border-opacity-50 rounded-sm 
+				text-white items-center justify-between cursor-pointer"
 			>
 				<CountryOption
 					language={selectedCountry.language}
