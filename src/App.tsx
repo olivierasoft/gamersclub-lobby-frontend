@@ -1,10 +1,10 @@
-import './App.css'
-import io from 'socket.io-client'
+import "./App.css";
+import { Login } from "./pages/Login/Login";
 
-// const socket = io('http://localhost:3333')
+// Const socket = io('http://localhost:3333')
 
 function App() {
-    return (<h1>Hello World</h1>);
+	return <Login />;
 }
 
-export default App
+export default App;
